@@ -7,6 +7,41 @@
     display: block;
     margin: 0px auto;
 }
+.btn{
+    display:block;
+    text-align:center;
+    margin: .5em 0;
+    padding: 0;
+}
+.btn-blue{
+    border: 1px solid #2c89ba /*{b-bup-border}*/;
+    background: #45b1e9 /*{b-bup-background-color}*/;
+}
+
+#tabstrip-Timetable> div.km-content.km-widget.km-scroll-wrapper{
+    background: #7db1ac;
+    background-image:url(../styles/images/background.png);
+    background-repeat:repeat;
+    
+}
+#tabstrip-enrolment-help> div.km-content.km-widget.km-scroll-wrapper{
+    background: #7db1ac;
+ background-image:url(../styles/images/background.png);
+    background-repeat:repeat;
+    
+}
+#tabstrip-home> div.km-content.km-widget.km-scroll-wrapper{
+    background: #7db1ac;
+ background-image:url(../styles/images/background.png);
+    background-repeat:repeat;
+    
+}
+#Drawer1 > div.km-content.km-widget.km-scroll-wrapper{
+    background: #72A492;
+    background-image:url(../styles/images/background.png);
+    background-repeat:repeat;    
+}
+
 .logo-image {
     background-image: url(../styles/images/logo.png);
     background-repeat: no-repeat;
