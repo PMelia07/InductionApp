@@ -4,8 +4,9 @@
     <title></title>
     <meta charset="utf-8" />
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
-    <link href="styles/main.css" rel="stylesheet" />
-
+	<link href="kendo/styles/kendo.default.min.css" rel="stylesheet" />
+     <link href="styles/main.css" rel="stylesheet" />
+	
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
@@ -13,6 +14,8 @@
 
     <script src="scripts/location.js"></script>
     <script src="scripts/app.js"></script>
+      
+  
 </head>
 <body>
     <!--Drawer View-->
@@ -22,14 +25,12 @@
                 <span class="bold">IT Sligo</span><span class="thin"> Induction 2014</span>
             </h2>
             <li data-icon="home"><a href="#tabstrip-home"><span class="bold">Home</span></a></li>
-            <li data-icon="about"><a href="views/News.html"><span class="bold">News</span></a></li>
             <li data-icon="globe"><a href="views/CampusMap.html"><span class="bold">Campus</span><span class="thin"> Map</span></a></li>
-            <li data-icon="globe"><a href="views/KendoMap.html"><span class="bold">Kendo</span><span class="thin"> Map</span></a></li>
-            <li data-icon="organize"><a href="views/CheckList.html"><span class="Bold">Check</span><span class="thin"> List</span></a></li>
+            <li data-icon="organize"><a href="views/CheckList.html"><span class="bold">Check</span><span class="thin"> List</span></a></li>
             <li data-icon="recents"><a href="views/TimeTable.html"><span class="bold">Time</span><span class="thin">Table</span></a></li>
             <li data-icon="info"><a href="views/Enrolment.html"><span class="bold">Registration</span><span class="thin"> Help</span></a></li>
-            <li><a href="https://www.facebook.com/itsligo" target="_blank" data-rel="modalview"><span class="bold">Facebook</span></a></li>
-            <li><a href="https://twitter.com/itsligo" target="_blank" data-rel="modalview"><span class="bold">Twitter</span></a></li>
+            <li><a href="http://www.facebook.com/itsligo"  data-rel="external"><span class="bold">Facebook</span></a></li>
+            <li><a href="https://twitter.com/itsligo" data-rel="external"><span class="bold">Twitter</span></a></li>
         </ul>	
         <div id="contactInfo">
             <p .thin><span class="bold">T: </span><a href="tel:+353719155222">(071) 9155222</a></p>
@@ -46,28 +47,16 @@
     <div id="tabstrip-home" data-role="view" data-title="Home"  class="inner-content">
         <div class="view-content">
             <div data-role="navbar" class="navstyle">
-            <a data-role="button" data-rel="drawer" href="#Drawer1" data-icon="drawer-button" data-align="left"></a>
+            	<a style="margin-left:-15px;margin-top:-10px;" data-role="button" data-rel="drawer" href="#Drawer1" data-align="left"><img class="btnDrawer"/></a>
             </div>
-            <h1>Welcome!</h1>
-            <div class="welcome-image"></div>
+				 <img id="ITSligoFish" src="styles/images/ITSligoFish.png" alt="IT_Sligo_Fish"  />
          <div id="Indexcontainer">
-            <p>
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+           <h2 class="mainHeaderh2"> Welcome </h2>
+             <p>
+              You are very welcome to IT Sligo. In this app will have a wealth of information for current and prospective students, You will about all that is happen around the college on the induction day as well as information about our facilities and services….
              </p> 
           </div>
-            
-        <!-- <script>             
-                    var b = document.getElementById("Indexcontainer");
-                    var el = new Everlive("DsdZIJppozhafPu5");
-                 
-                    var myHtml;
-                    el.data("HomePageContentTest").getById("b906c200-b4f2-11e3-b327-c526eba1cb28", function (data) {
-                        myHtml = data.result.Content;
-                        b.innerHTML = myHtml;
-                    }, function (err) {
-                        console.log(JSON.stringify(err));
-                    });
-            </script>   -->
+   
     	</div> 
     </div>
 </body>
