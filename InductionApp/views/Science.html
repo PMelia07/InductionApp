@@ -39,30 +39,31 @@
     </head>
 
     <body>
-        <!--E and D school-->
-        <div data-role="view" id="tabstrip-Engineering">
-            <!--data-init="mobileListViewPressToLoadMore()"  >-->
-            <div data-role="navbar" class="navstyle">
-                <a style="margin-left:-15px;margin-top:-10px;" data-role="button" data-rel="drawer" href="#Drawer1" data-align="left">
-                    <img class="btnDrawer"/>
+        <!--sci school-->
+        <div data-role="view" id="tabstrip-Science">
+       
+            <div data-role="navbar" class="navstyle" >
+                <a style="margin-left:-15px;margin-top:-10px;" data-role="button" data-role="backbutton" data-rel="drawer" href="#Drawer1" data-align="left">
+                    <img class="btnDrawer" />
                 </a>
-            </div> 
+            </div>
+         
+             
             <div class="view-content" >
-                <h1 class="mainHeadings">School of Engineering and Design</h1>
+                <h1 class="eventsLayoutH3 mainHeadings">School of Science</h1>
 
                 <ul id="list" data-role="listview" data-source="tdataSource" data-template="tmp"></ul>
-            </div>
-            <script id="tmp" type="text/x-kendo-template">
-           
-
-             <div id="mainHolder">
+            </div> 
+            <script id="tmp" type="text/x-kendo-template" class="eventsLayout">
+            <div id="mainHolder">
             <div id="mainHolderH3">
                 <h3>#:Event#</h3>
-               </div>
+            </div>
             <div id="mainHolderP">
-                    <p>Time: #:kendo.toString(new Date(Start_Time), "HH:MM:tt")# - #=kendo.toString(new Date(End_TIme), "HH:MM:tt")#</p>
-                <p>Room: #:kendo.toString(Room, "E")#</p>
-                            </div>
+            	<p><span class="bold">Group:</span><span class="thin"> #:kendo.toString(Group_Color, "ED")#</span></p>
+                <p><span class="bold">Time:</span> <span class="thin">#:kendo.toString(new Date(Start_Time), "HH:MM:tt")# - #=kendo.toString(new Date(End_Time), "HH:MM:tt")#</span></p>
+                <p >Room: #:kendo.toString(Room, "ED")#</p>
+            </div>
             </div>
             </script>
             <script>
@@ -73,11 +74,14 @@
 		    <button class="backbutton" onclick="goBack()">&#8592; Return</button>
             <script>
        
+                var filter = { "SchoolCode" : "ED" };
+       
                 var tdataSource = new kendo.data.DataSource({
                     transport: {
 	                        read: {
-                                   url: "http://api.everlive.com/v1/DsdZIJppozhafPu5/Events",
-                                   dataType: "json"
+                                   url: "http://api.everlive.com/v1/DsdZIJppozhafPu5/SchoolOFScienceEvents",
+                                   dataType: "json",
+                                
                                   },
     			                },
                     schema: {
@@ -88,7 +92,7 @@
               
             </script>
 
-         	<style scoped>
+			<style scoped>
                 #mainHolder{
                     Width:90%;
                      border-bottom: rgba(243, 240, 240, 0.35) 2px solid; 
@@ -106,6 +110,7 @@
                     border-left: rgba(243, 240, 240, 0.35) 2px solid;    
                 }
             </style>
+
         </div>
     </body>
 </html>

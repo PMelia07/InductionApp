@@ -19,13 +19,18 @@
      <div id="tabstrip-enrolment-help"
         data-role="view"
         data-title="Enrolment Help">
-			<div data-role="navbar" class="navstyle">
-           	 <a data-role="button" data-rel="drawer" href="#Drawer1" data-icon="drawer-button" data-align="left"></a>
+            <div data-role="navbar" class="navstyle">
+            	<a style="margin-left:-15px;margin-top:-10px;" data-role="button" data-rel="drawer" href="#Drawer1" data-align="left"><img class="btnDrawer"/></a>
             </div>
  	  
          <div class="view-content">
-         	<iframe src="https://mapsengine.google.com/map/embed?mid=zbflZXXuHETc.k4A8HIiHPoFk" width="640" height="480"></iframe>
+             <h1 class="mainHeadings">
+                  Campus map
+             </h1>
+         	<iframe id="googleMapIFrame"class="mapiframe" src="https://mapsengine.google.com/map/embed?mid=zbflZXXuHETc.k4A8HIiHPoFk" width="600" height="450"></iframe>
+        
          </div>
+         
     </div>
 </body>
 </html>

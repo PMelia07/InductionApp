@@ -1,10 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    color:fff;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500; 
+    text-shadow:  0px .5px .5px rgba(31, 32, 32, 0.22);
+color: #fff;
+}
+/*Font Styling*/
+.bold
+{font-weight:bold;}
+.thin
+{font-weight:200;}
+
+p{
+    font-size:1.1em;
+}
+
+#Indexcontainer {
+
+font-size: larger;
+}
+ul.km-widget.km-listview.km-list.km-listinset {
+	text-shadow: 0px .5px 1px #1F2020;
+    color: #F8F8F8;}
+
+.navstyle{
+    background:url('../styles/images/ItsligoHeader2.png') no-repeat;
+    background-color:transparent;
+    background-size:100%;
+    
+}
 .ac-container{
 	width: 100%;
 	margin: 10px auto 30px auto;
 	text-align: left;
 }
 .ac-container label{
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 	padding: 5px 20px;
 	position: relative;
 	z-index: 20;
@@ -29,12 +64,12 @@
 		0px 2px 2px rgba(0,0,0,0.1);
 }
 .ac-container label:hover{
-	background: #fff;
+	background: whitesmoke;
 }
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
-	background: #c6e1ec;
-	color: #3d7489;
+	background: #3d7489;
+	color: white;
 	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
 	box-shadow: 
 		0px 0px 0px 1px rgba(155,155,155,0.3), 
@@ -95,34 +130,102 @@
 	height: 230px;
 }
 
-    #scroller-view h2{
-        margin: 15px 10px 0 10px;
-    }
-
-    #scroller-view img {
-        -webkit-transform: translatez(0);
-    }
-
-    #scroller-view .scroller-content {
-        font-weight: normal;
-        height: 130px;
-        margin: 15px 0;
-        background-color: rgba(0, 0, 0, 0.07);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45) inset;
-    }
-/*END ACCORDION*/
-
-/* IMAGES */
-.welcome-image {
-    background-image: url(../styles/images/ITSligoFish.png);
-    background-repeat: no-repeat;
-    text-align:center;
-    width: 250px;
-    height: 200px;
-    display: block;
-    margin: 0px auto;
+#scroller-view h2{
+    margin: 15px 10px 0 10px;
 }
 
+#scroller-view img {
+    -webkit-transform: translatez(0);
+}
+
+#scroller-view .scroller-content {
+    font-weight: normal;
+    height: 130px;
+    margin: 15px 0;
+    background-color: rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45) inset;
+}
+/*END ACCORDION*/
+a.login-button{
+    
+    margin:0px !important";
+}
+/* Back Button Stlye */
+.backbutton{
+    height: 40px;
+  
+    background: none;
+    color: white;
+    border: none;
+    margin: 2.5%;
+    font-size: 1.3em;
+}
+/*main Heading */
+.mainHeadings{
+    text-decoration:underline;
+}
+/* IMAGES */
+#ITSligoFish{
+    background-image: url(../styles/images/ITSligoFish.png);
+    margin-left: 2.5%;
+	margin-top:5px;
+	margin-right: auto;
+	width: 95%;
+   box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.31);
+}
+.schoolIcons{
+   width:20px;   
+}
+/* school Sytle */
+.schoolh2{
+    margin-left:10px;
+}
+.schoolh2 a{
+    margin-top:10px;
+    font-size:18px;
+    text-decoration:none !important;
+    
+}
+.schoolP{
+    font-size:25px;
+}
+ .accordingH2
+{
+    
+}
+
+/*Map style */
+.mapiframe
+{
+    margin-top:10px;
+}
+.ilErfe-e1YmVc-ZMv3u 
+{
+    display:none !important;
+}
+.div #featurelist-scrollable-container
+{max-height: 306px;
+max-width: 200px;
+}
+.div #featureListPanel {
+width: 150px !important;
+background: rgba(255, 255, 255, 0.46) !important;
+}
+
+
+/* TabStrips */
+#tabstrip-Business> div.km-content.km-widget.km-scroll-wrapper{
+    background: #7db1ac;
+    background-image:url(../styles/images/background.png);
+    background-repeat:repeat;
+    
+}
+#tabstrip-Science> div.km-content.km-widget.km-scroll-wrapper{
+    background: #7db1ac;
+    background-image:url(../styles/images/background.png);
+    background-repeat:repeat;
+    
+}
 #tabstrip-what-to-bring> div.km-content.km-widget.km-scroll-wrapper{
     background: #7db1ac;
     background-image:url(../styles/images/background.png);
@@ -143,7 +246,7 @@
 }
 #tabstrip-enrolment-help> div.km-content.km-widget.km-scroll-wrapper{
     background: #7db1ac;
- background-image:url(../styles/images/background.png);
+    background-image:url(../styles/images/background.png);
     background-repeat:repeat;
     
 }
@@ -155,16 +258,23 @@
 }
 #Drawer1 > div.km-content.km-widget.km-scroll-wrapper{
 	background: #00395c;
-    color:#fff;    
+    color:#fff;   
 }
 
 #Drawer1 > div li:hover , li:active  {
     background: #89CBDF;
     color:#fff;
     border-left:3px;
-
 }
 
+.btnDrawer{
+   background-image:url(../styles/images/yKnQI.png);
+   width: 30px;
+   height:30px;
+/*   margin-left:-15px;
+   margin-top:-10px;*/
+   
+}
 
 .logo-image {
     background-image: url(../styles/images/logo.png);

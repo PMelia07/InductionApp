@@ -21,12 +21,25 @@
         data-title="Timetable">
 
          <div class="view-content">
-             <div data-role="navbar" class="navstyle">
-         	   <a data-role="button" data-rel="drawer" href="#Drawer1" data-icon="drawer-button" data-align="left"></a>          
+           <div data-role="navbar" class="navstyle">
+            	<a style="margin-left:-15px;margin-top:-10px;" data-role="button" data-rel="drawer" href="#Drawer1" data-align="left"><img class="btnDrawer"/></a>
             </div>
-             <h1><span class="bold">Time</span><span class="thin">Table</span></h1>
-             <a style="margin-left:20px;" class="login-button" href="views/Engineering.html">School of Engineering and Design</a>
-             
+             <h1 class="mainHeadings"><span class="bold">Time</span><span class="thin">Table</span></h1>
+             <div id="timetableSchoolHolder">
+                 <p class="schoolP">
+                     Select the school you are in:
+                 </p>
+                 <h2 class="schoolh2">
+                     <a class="login-button" href="views/Engineering.html"><img class="schoolIcons" src="styles/images/Industry-engineering-icon.png"/><span class="bold">School of</span><span class="thin">Engineering and Design</span></a>
+             </h2>
+              <h2 class="schoolh2">
+                  <a  class="login-button" href="views/Science.html"><img class="schoolIcons" src="styles/images/Science-Test-tube-icon.png"/><span class="bold ">School of</span><span class="thin"> Science</span></a>
+             </h2>
+              <h2 class="schoolh2">
+                  <a  class="login-button" href="views/Business.html"><img class="schoolIcons" src="styles/images/Science-Business-icon.png"/><span class="bold ">School of</span><span class="thin"> Business</span></a>
+             </h2>
+             </div>  
+            
          </div>
     </div>
 </body>

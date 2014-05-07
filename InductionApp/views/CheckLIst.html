@@ -1,115 +1,252 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-    <meta charset="utf-8" />
-    <link href="../kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
-    <link href="../styles/main.css" rel="stylesheet" />
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <link href="../kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link href="../styles/main.css" rel="stylesheet" />
 
-    <script src="../cordova.js"></script>
-    <script src="../kendo/js/jquery.min.js"></script>
-    <script src="../kendo/js/kendo.mobile.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+        <script src="../cordova.js"></script>
+        <script src="../kendo/js/jquery.min.js"></script>
+        <script src="../kendo/js/kendo.mobile.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 
-    <script src="../scripts/location.js"></script>
-    <script src="../scripts/app.js"></script>
-</head>
-<body>
-<!--What To Bring-->
-     <div id="tabstrip-what-to-bring"
-        data-role="view"
-        data-title="What To Bring">
-        <div class="view-content">
-            <div data-role="navbar" class="navstyle">
-            <a data-role="button" data-rel="drawer" href="#Drawer1" data-icon="drawer-button" data-align="left"></a>
-             
-            </div>
-          
-            <h1><span class="bold">Check</span><span class="thin"> List</span></h1>
-            <hr>
-            <section class="ac-container">
-				<div>
-					<input id="ac-1" name="accordion-1" type="radio" checked />
-					<label for="ac-1">Day 1 and 2</label>
-					<article class="ac-small">
-                	<ul data-role="scroller" class="scroller-content" >
-                        <li>
-                            <label>
-                                <input type="checkbox" checked="checked" />
-                              Registered online and if eligible have paid your student contribution fee
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" />
-                               Check you have submitted all details and documents to SUSI if eligible for a grant
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" />
-                                Attend a campus tour
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" />
-                                Take a tour of the library 
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" />
-                                Get your Student ID Card 
-                            </label>
-                        </li>
-                      <li>
-                            <label>
-                                <input type="checkbox" />
-                                Get your student no and login to the computer 
-                            </label>
-                        </li>
-                                                  <li>
-                            <label>
-                                <input type="checkbox" />
-                                Get your Student ID Card 
+        <script src="../scripts/location.js"></script>
+        <script src="../scripts/app.js"></script>
+    </head>
+    <body>
+        <!--What To Bring-->
+        <div id="tabstrip-what-to-bring"
+             data-role="view"
+             data-title="What To Bring">
+            <div class="view-content">
+                <div data-role="navbar" class="navstyle">
+                    <a style="margin-left:-15px;margin-top:-10px;" data-role="button" data-rel="drawer" href="#Drawer1" data-align="left"><img class="btnDrawer"/></a>
+                </div>
+
+                <h1>
+                    <span class="bold">Check</span><span class="thin"> List</span>
+                </h1>
+                <hr>
+
+                <div  data-title="Check List" id="scroller-view">
+                    <h2 class="h2Header">
+                        Day One & Two
+                    </h2>
+                    <div data-role="scroller" class="scroller-content" >
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked="checked" />
+                                    Registered online and if eligible have paid your student contribution fee
                                 </label>
-                        </li>
-                                <li>
-                            <label>
-                                <input type="checkbox" />
-                                Attend the “course talks” to meet your lecturers/classmates 
-                            </label>
-                        </li><li>
-                            <label>
-                                <input type="checkbox" />
-                                Get to know the Students Union team  
-                            </label>
-                        </li>
-                      <li>
-                            <label>
-                                <input type="checkbox" />
-                                Visit the Supports & Services Exhibition  
-                            </label>
-                        </li>
-                      <li>
-                            <label>
-                                <input type="checkbox" />
-                                Get your accommodation sorted and settle in  
-                            </label>
-                        </li>
-                    </ul>
-                </article>
-				</div>
-				<div>
-					<input id="ac-2" name="accordion-1" type="radio" />
-					<label for="ac-2">Week 1</label>
-					<article class="ac-medium">
-					test
-					</article>
-				</div>
-			</section>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Check you have submitted all details and documents to SUSI if eligible for a grant
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Attend a campus tour
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Take a tour of the library
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Get your Student ID Card
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Get your student no and login to the computer
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Get your Student ID Card
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Attend the “course talks” to meet your lecturers/classmates
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Get to know the Students Union team
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Visit the Supports & Services Exhibition
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Get your accommodation sorted and settle in
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <h2>Week One</h2>
+                    <div data-role="scroller" class="scroller-content" >
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked="checked" />
+                                    Start attending all lectures
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Login and check your college emails
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    If you have a laptop connect it to the campus WIFI
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Order any books you need for your course
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Know who you year co-ordinator is should you have any issues
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <h2>Week Two</h2>
+                    <div data-role="scroller" class="scroller-content" >
+
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" checked="checked" />
+                                    Pick your elective subjects (if included in your course)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Participate in activities organised during Fresher’s week
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Make sure you know your lecturers names and how to contact them
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <br>
+                    <h2>Week Three</h2>
+                    <div data-role="scroller" class="scroller-content" >
+
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox"  />
+                                    Go to Clubs and Societies Day
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Check your college emails for messages from lecturers, student services and ITSSU
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    If you think you’re on the wrong course, speak to your year co-ordinator and discuss your options
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <br>
+                    <h2>Week Four</h2>
+                    <div data-role="scroller" class="scroller-content" >
+
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox"  />
+                                    With your classmates, elect a class representative
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    Attend a free “Academic Writing” workshop (you will be informed of these via email)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    By now you should feel settled in at IT Sligo, if not please contact your year co-ordinator or a member of staff in student supports services
+                                    <a href="tel:+353719137369">Tel: 071-91 37369</a>
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <style scoped>
+
+
+ 
+
+                    #scroller-view h2
+                    {
+                        margin: 15px 10px 0 10px;
+                    }
+                    
+                    #scroller-view img
+                    {
+                        -webkit-transform: translatez(0);
+                    }
+                    
+                    #scroller-view .scroller-content
+                    {
+                        font-weight: normal;
+                        height: 130px;
+                        margin: 15px 0;
+                        background-color: rgba(0, 0, 0, 0.07);
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45) inset;
+                    }
+                    </style>
+            
             </div>
-         </div>
-</body>
+        </div>
+    
+    </body>
 </html>
